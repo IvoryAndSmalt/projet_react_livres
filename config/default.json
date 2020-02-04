@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://buyo4545:E7nM3Rqk6lAjh1jS0zJH@buyo-b6ggp.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecretcss117buyoboy"
+}
