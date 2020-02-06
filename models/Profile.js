@@ -5,101 +5,78 @@ const ProfileSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "user"
   },
-  experience: [
+  read_books: [
     {
       title: {
         type: String,
         required: true
       },
-      company: {
+      author: {
         type: String,
         required: true
       },
-      location: {
-        type: String
-      },
-      from: {
-        type: Date,
-        required: true
-      },
-      to: {
-        type: Date
-      },
-      current: {
+      completed: {
         type: Boolean,
-        default: false
+        default: true
       },
-      description: {
-        type: String
+      percentage_read: {
+        type: Number,
+        default: 100
       }
     }
   ],
-  education: [
+  available_books: [
     {
-      school: {
+      title: {
         type: String,
         required: true
       },
-      degree: {
+      author: {
         type: String,
         required: true
       },
-      fieldofstudy: {
-        type: String,
-        required: true
-      },
-      from: {
-        type: Date,
-        required: true
-      },
-      to: {
-        type: Date
-      },
-      current: {
+      available: {
         type: Boolean,
-        default: false
+        default: true
+      },
+      return_date: {
+        type: Date
       }
     }
   ],
-  social: {
-    youtube: {
-      type: String
-    },
-    twitter: {
-      type: String
-    },
-    facebook: {
-      type: String
-    },
-    linkedin: {
-      type: String
-    },
-    instagram: {
-      type: String
+  borrowed: [
+    {
+      user: {
+        type: String,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      },
+      author: {
+        type: String,
+        required: true
+      },
+      return_date: {
+        type: Date,
+        required: true
+      }
     }
-  },
-  company: {
-    type: String
-  },
-  website: {
-    type: String
-  },
+  ],
   location: {
     type: String
   },
-  status: {
+  bio: {
     type: String,
     required: true
   },
-  skills: {
-    type: [String],
+  public_email: {
+    type: String,
     required: true
   },
-  bio: {
-    type: String
-  },
-  githubusername: {
-    type: String
+  public_phone: {
+    type: Number
   },
   date: {
     type: Date,
