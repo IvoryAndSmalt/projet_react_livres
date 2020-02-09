@@ -1,0 +1,28 @@
+/*NAVBAR*/
+.home_button:visited,
+.home_button:focus,
+.home_button:hover {
+  color: white;
+}
+.navbar.bg-primary {
+  color: #fff;
+  background-color: darkorange !important;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: rgb(109, 60, 0);
+}
+
+.form-control,
+.is-focused .form-control {
+  background-image: linear-gradient(0deg, darkorange 2px, rgba(71, 39, 0, 0) 0),
+    linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
+}
+
+/*LANDING*/
+.card .card-header-primary {
+  background: darkorange;
+  box-shadow: 0 5px 20px 0 rgba(255, 102, 0, 0.2),
+    0 13px 24px -11px rgba(255, 102, 0, 0.2);
+}
