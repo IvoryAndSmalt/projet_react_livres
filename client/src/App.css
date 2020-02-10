@@ -1,3 +1,13 @@
+/*RESET*/
+a:focus, a:visited, a:link{
+  color: darkblue;
+}
+
+.danger{
+  background: darkred;
+  color: white;
+}
+
 /*NAVBAR*/
 .home_button:visited,
 .home_button:focus,
@@ -12,6 +22,18 @@
 .form-group label {
   font-size: 1.1rem;
   color: rgb(109, 60, 0);
+}
+
+.form-group, .form-group *{
+  display:block;
+  width:100%;
+  text-align: center;
+}
+
+.form-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-control,
